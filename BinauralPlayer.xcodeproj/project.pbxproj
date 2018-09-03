@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A681E173B40F22E04D1CA6B /* Pods_BinauralPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E5886B3241058FB3B4B4CF /* Pods_BinauralPlayer.framework */; };
+		C419FB9520BE5E5000965AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C419FB9420BE5E5000965AF2 /* Assets.xcassets */; };
+		C419FB9720BE5EE700965AF2 /* sonicplay_info_loading_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = C419FB9620BE5EE700965AF2 /* sonicplay_info_loading_1.gif */; };
+		C419FB9B20C05AEF00965AF2 /* CoreGraphics+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C419FB9920C05AEF00965AF2 /* CoreGraphics+Additions.swift */; };
+		C419FB9C20C05AEF00965AF2 /* JoyStickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C419FB9A20C05AEF00965AF2 /* JoyStickView.swift */; };
+		C419FBAA20C063B300965AF2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C419FBA920C063B300965AF2 /* Accelerate.framework */; };
+		C444D84B20C63CC5007834C8 /* STA_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C444D84A20C63CC5007834C8 /* STA_Framework.framework */; };
+		C444D84C20C63CC5007834C8 /* STA_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C444D84A20C63CC5007834C8 /* STA_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C4B4E81E20C5294900851CD7 /* BinauralRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B4E81C20C5294800851CD7 /* BinauralRendering.m */; };
+		C4B4E81F20C5294900851CD7 /* Binaural.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B4E81D20C5294800851CD7 /* Binaural.m */; };
+		C4B727BC20B2945D009F1136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B727BB20B2945D009F1136 /* AppDelegate.swift */; };
+		C4B727BE20B2945D009F1136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B727BD20B2945D009F1136 /* ViewController.swift */; };
+		C4B727C120B2945D009F1136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B727BF20B2945D009F1136 /* Main.storyboard */; };
+		C4B727C420B2945D009F1136 /* BinauralPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4B727C220B2945D009F1136 /* BinauralPlayer.xcdatamodeld */; };
+		C4B727C920B2945E009F1136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B727C720B2945E009F1136 /* LaunchScreen.storyboard */; };
+		C4B727D120B294DD009F1136 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B727D020B294DD009F1136 /* CustomCollectionViewCell.swift */; };
+		C4B727D320B294FC009F1136 /* VideoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B727D220B294FC009F1136 /* VideoCollectionViewController.swift */; };
+		C4B727D520B29FE8009F1136 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B727D420B29FE8009F1136 /* VideoViewController.swift */; };
+		C4B727D720B2BF64009F1136 /* VideoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B727D620B2BF64009F1136 /* VideoNavigationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4DD561820C0DAFB00AEFFF2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C444D84C20C63CC5007834C8 /* STA_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		29CF3213B47F13B34FA5621D /* Pods-BinauralPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinauralPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BinauralPlayer/Pods-BinauralPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		41A3A6227A9060E1A2EEB345 /* Pods-BinauralPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinauralPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-BinauralPlayer/Pods-BinauralPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		77E5886B3241058FB3B4B4CF /* Pods_BinauralPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinauralPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C419FB9420BE5E5000965AF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C419FB9620BE5EE700965AF2 /* sonicplay_info_loading_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sonicplay_info_loading_1.gif; sourceTree = "<group>"; };
+		C419FB9920C05AEF00965AF2 /* CoreGraphics+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Additions.swift"; sourceTree = "<group>"; };
+		C419FB9A20C05AEF00965AF2 /* JoyStickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoyStickView.swift; sourceTree = "<group>"; };
+		C419FBA920C063B300965AF2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C444D84A20C63CC5007834C8 /* STA_Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STA_Framework.framework; sourceTree = "<group>"; };
+		C4B4E81920C5294800851CD7 /* BinauralPlayer-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BinauralPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		C4B4E81A20C5294800851CD7 /* BinauralRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinauralRendering.h; sourceTree = "<group>"; };
+		C4B4E81B20C5294800851CD7 /* Binaural.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Binaural.h; sourceTree = "<group>"; };
+		C4B4E81C20C5294800851CD7 /* BinauralRendering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinauralRendering.m; sourceTree = "<group>"; };
+		C4B4E81D20C5294800851CD7 /* Binaural.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Binaural.m; sourceTree = "<group>"; };
+		C4B727B820B2945D009F1136 /* BinauralPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinauralPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B727BB20B2945D009F1136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4B727BD20B2945D009F1136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4B727C020B2945D009F1136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4B727C320B2945D009F1136 /* BinauralPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BinauralPlayer.xcdatamodel; sourceTree = "<group>"; };
+		C4B727C820B2945E009F1136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4B727CA20B2945E009F1136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B727D020B294DD009F1136 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		C4B727D220B294FC009F1136 /* VideoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewController.swift; sourceTree = "<group>"; };
+		C4B727D420B29FE8009F1136 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		C4B727D620B2BF64009F1136 /* VideoNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNavigationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4B727B520B2945D009F1136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C419FBAA20C063B300965AF2 /* Accelerate.framework in Frameworks */,
+				8A681E173B40F22E04D1CA6B /* Pods_BinauralPlayer.framework in Frameworks */,
+				C444D84B20C63CC5007834C8 /* STA_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A98D81CCCCA013148B1A66C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29CF3213B47F13B34FA5621D /* Pods-BinauralPlayer.debug.xcconfig */,
+				41A3A6227A9060E1A2EEB345 /* Pods-BinauralPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E5A0241B54A2524604AA717 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C419FBA920C063B300965AF2 /* Accelerate.framework */,
+				77E5886B3241058FB3B4B4CF /* Pods_BinauralPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C419FB9820C05AEF00965AF2 /* JoyStick */ = {
+			isa = PBXGroup;
+			children = (
+				C419FB9920C05AEF00965AF2 /* CoreGraphics+Additions.swift */,
+				C419FB9A20C05AEF00965AF2 /* JoyStickView.swift */,
+			);
+			path = JoyStick;
+			sourceTree = "<group>";
+		};
+		C419FBA420C0633300965AF2 /* Binaural */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4E81B20C5294800851CD7 /* Binaural.h */,
+				C4B4E81D20C5294800851CD7 /* Binaural.m */,
+				C4B4E81920C5294800851CD7 /* BinauralPlayer-Bridging-Header.h */,
+				C4B4E81A20C5294800851CD7 /* BinauralRendering.h */,
+				C4B4E81C20C5294800851CD7 /* BinauralRendering.m */,
+			);
+			path = Binaural;
+			sourceTree = "<group>";
+		};
+		C4B727AF20B2945D009F1136 = {
+			isa = PBXGroup;
+			children = (
+				C444D84A20C63CC5007834C8 /* STA_Framework.framework */,
+				C4B727BA20B2945D009F1136 /* BinauralPlayer */,
+				C4B727B920B2945D009F1136 /* Products */,
+				2A98D81CCCCA013148B1A66C /* Pods */,
+				7E5A0241B54A2524604AA717 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4B727B920B2945D009F1136 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4B727B820B2945D009F1136 /* BinauralPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4B727BA20B2945D009F1136 /* BinauralPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C419FBA420C0633300965AF2 /* Binaural */,
+				C419FB9820C05AEF00965AF2 /* JoyStick */,
+				C4B727BB20B2945D009F1136 /* AppDelegate.swift */,
+				C4B727BD20B2945D009F1136 /* ViewController.swift */,
+				C4B727D220B294FC009F1136 /* VideoCollectionViewController.swift */,
+				C4B727D020B294DD009F1136 /* CustomCollectionViewCell.swift */,
+				C4B727D420B29FE8009F1136 /* VideoViewController.swift */,
+				C4B727BF20B2945D009F1136 /* Main.storyboard */,
+				C419FB9620BE5EE700965AF2 /* sonicplay_info_loading_1.gif */,
+				C4B727D620B2BF64009F1136 /* VideoNavigationController.swift */,
+				C419FB9420BE5E5000965AF2 /* Assets.xcassets */,
+				C4B727C720B2945E009F1136 /* LaunchScreen.storyboard */,
+				C4B727CA20B2945E009F1136 /* Info.plist */,
+				C4B727C220B2945D009F1136 /* BinauralPlayer.xcdatamodeld */,
+			);
+			path = BinauralPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4B727B720B2945D009F1136 /* BinauralPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B727CD20B2945E009F1136 /* Build configuration list for PBXNativeTarget "BinauralPlayer" */;
+			buildPhases = (
+				1186FF5F0104C52E7ACCBE57 /* [CP] Check Pods Manifest.lock */,
+				C4B727B420B2945D009F1136 /* Sources */,
+				C4B727B520B2945D009F1136 /* Frameworks */,
+				C4B727B620B2945D009F1136 /* Resources */,
+				31D341FB840CEF0AFE8928F6 /* [CP] Embed Pods Frameworks */,
+				C4DD561820C0DAFB00AEFFF2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinauralPlayer;
+			productName = BinauralPlayer;
+			productReference = C4B727B820B2945D009F1136 /* BinauralPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4B727B020B2945D009F1136 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "kyungryun Choi";
+				TargetAttributes = {
+					C4B727B720B2945D009F1136 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = C4B727B320B2945D009F1136 /* Build configuration list for PBXProject "BinauralPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4B727AF20B2945D009F1136;
+			productRefGroup = C4B727B920B2945D009F1136 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4B727B720B2945D009F1136 /* BinauralPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4B727B620B2945D009F1136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B727C920B2945E009F1136 /* LaunchScreen.storyboard in Resources */,
+				C419FB9520BE5E5000965AF2 /* Assets.xcassets in Resources */,
+				C419FB9720BE5EE700965AF2 /* sonicplay_info_loading_1.gif in Resources */,
+				C4B727C120B2945D009F1136 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1186FF5F0104C52E7ACCBE57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BinauralPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31D341FB840CEF0AFE8928F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BinauralPlayer/Pods-BinauralPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BinauralPlayer/Pods-BinauralPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4B727B420B2945D009F1136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B727C420B2945D009F1136 /* BinauralPlayer.xcdatamodeld in Sources */,
+				C4B727BE20B2945D009F1136 /* ViewController.swift in Sources */,
+				C4B727D520B29FE8009F1136 /* VideoViewController.swift in Sources */,
+				C419FB9B20C05AEF00965AF2 /* CoreGraphics+Additions.swift in Sources */,
+				C4B727BC20B2945D009F1136 /* AppDelegate.swift in Sources */,
+				C4B727D120B294DD009F1136 /* CustomCollectionViewCell.swift in Sources */,
+				C4B4E81E20C5294900851CD7 /* BinauralRendering.m in Sources */,
+				C4B727D720B2BF64009F1136 /* VideoNavigationController.swift in Sources */,
+				C4B727D320B294FC009F1136 /* VideoCollectionViewController.swift in Sources */,
+				C419FB9C20C05AEF00965AF2 /* JoyStickView.swift in Sources */,
+				C4B4E81F20C5294900851CD7 /* Binaural.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4B727BF20B2945D009F1136 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4B727C020B2945D009F1136 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4B727C720B2945E009F1136 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4B727C820B2945E009F1136 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4B727CB20B2945E009F1136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4B727CC20B2945E009F1136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4B727CE20B2945E009F1136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29CF3213B47F13B34FA5621D /* Pods-BinauralPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G72VU4EUA8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = BinauralPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.db.BinauralPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BinauralPlayer/Binaural/BinauralPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C4B727CF20B2945E009F1136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A3A6227A9060E1A2EEB345 /* Pods-BinauralPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G72VU4EUA8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = BinauralPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.db.BinauralPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BinauralPlayer/Binaural/BinauralPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4B727B320B2945D009F1136 /* Build configuration list for PBXProject "BinauralPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B727CB20B2945E009F1136 /* Debug */,
+				C4B727CC20B2945E009F1136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4B727CD20B2945E009F1136 /* Build configuration list for PBXNativeTarget "BinauralPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B727CE20B2945E009F1136 /* Debug */,
+				C4B727CF20B2945E009F1136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4B727C220B2945D009F1136 /* BinauralPlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4B727C320B2945D009F1136 /* BinauralPlayer.xcdatamodel */,
+			);
+			currentVersion = C4B727C320B2945D009F1136 /* BinauralPlayer.xcdatamodel */;
+			path = BinauralPlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C4B727B020B2945D009F1136 /* Project object */;
+}

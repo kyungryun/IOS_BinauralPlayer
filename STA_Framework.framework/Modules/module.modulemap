@@ -1,0 +1,6 @@
+framework module STA_Framework {
+  umbrella header "STA_Framework.h"
+
+  export *
+  module * { export * }
+}
